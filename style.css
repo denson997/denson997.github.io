@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-  background: rgb(41, 64, 239);
+  background: #e61a1a;
   margin-bottom: 20px;
   display: flex;
   padding: 10px;
@@ -37,7 +37,7 @@ a {
 
 /* main container area beneath menu */
 main {
-  background: rgb(245, 238, 219);
+  background: rgb(237, 37, 170);
   display: flex;
 }
 .sidebar {
@@ -61,3 +61,75 @@ h2,
 h3 {
   margin: 0px;
 }
+         /* portfolio styles */
+         .content h1 {
+          color: black;
+      }
+
+      #portfolio {
+          list-style-type: none;
+          padding-left: 6;
+      }
+      #portfolio li {
+          background: bluee;
+          padding: 10px;
+          border-radius: 10px 100px 120px;
+          margin-bottom: 20px;
+      }
+
+      #portfolio li:hover {
+          background: hwb(235 11% 15%);
+      }
+
+      #portfolio a {
+          text-decoration: none;
+          color: hsl(0, 84%, 55%);
+      }            /* responsive web design */
+      @media screen and (min-width: 150px) and (max-width: 1080px) {
+        main {
+          height: 150ch;
+          zoom: 1.5;
+          display: grid;
+        }
+
+        h1 {
+          font-size: 100px;
+        }
+
+        h2 {
+          font-size: 67px;
+        }
+
+        h3 {
+          font-size: 50px;
+        }
+
+        #all-contents {
+          height: 100ch;
+          margin: none;
+        }
+
+        a {
+          font-size: 42px;
+        }
+
+        .sidebar {
+          margin-right: 10px;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .sidebar-img {
+          width: 150%;
+        }
+
+        p,
+        li {
+          font-size: 24px;
+        }
+
+        .content {
+          align-content: center ;
+          justify-content: right;
+        }
+    }
