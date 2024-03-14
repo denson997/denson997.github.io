@@ -8,14 +8,14 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: teal; (114, 60, 207, 0, 664);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 600px; 
+			left: 0px; 
 		}
 		.board{
 			height: 100vh;
@@ -62,8 +62,12 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			var positionX = 1;
+			var positionX = 0;
 			var points = 0;
+			var speed = 10;
+			var positionY;
+			var speedY;
+			var boardHeight = jQuery(window).hight();
 
 			
 			/* 
@@ -71,11 +75,18 @@
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-			Increase positionX by 10; 
-			 positionX = positionX + 10;
+		
 			function update() {
-				moveBoxTo(positionX);
-				
+				// Frame 1
+				/* Your function call Here*/
+				positionX = positionX + speed;
+				moveBoxTo(positionX, positionY);
+				if (positionX > boardWidth) {
+					speed = speed
+				}
+				if (positionY < 0) {
+					speed = speed * -1
+				}
 
 
 
@@ -88,7 +99,7 @@
 			*/
 			function handleBoxClick() {
 				positionX = 0;
-				increase points by 1
+				speed = speed + 3
 				changeBoxText(points);
 
 
