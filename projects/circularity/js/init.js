@@ -20,14 +20,18 @@ var init = function (window) {
         ////////////////////////////////////////////////////////////
         
         // TODO 1 : Declare and initialize our variables
-
+var circle;
+var circles = [];
 
         // TODO 2 : Create a function that draws a circle 
         
 
-        // TODO 3 / 7 : Call the drawCircle() function 
-
-
+        // TODO 3 / 7: Call the drawCircle() function 
+nameOfFunction(drawCircle);
+nameOfFunction(drawCircle);
+nameOfFunction(drawCircle);
+nameOfFunction(drawCircle);
+nameOfFunction(drawCircle);
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -39,10 +43,21 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-
+physikz.updatePosition()
+physikz.updatePosition()
+physikz.updatePosition()
+physikz.updatePosition()
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-           
+           game.checkCirclePosition()
+           game.checkCirclePosition()
+           game.checkCirclePosition()
+           game.checkCirclePosition()
+           game.checkCirclePosition()
+
+
+            
+
 
             // TODO 9 : Iterate over the array
            
