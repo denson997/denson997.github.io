@@ -27,11 +27,8 @@ var circles = [];
         
 
         // TODO 3 / 7: Call the drawCircle() function 
-nameOfFunction(drawCircle);
-nameOfFunction(drawCircle);
-nameOfFunction(drawCircle);
-nameOfFunction(drawCircle);
-nameOfFunction(drawCircle);
+var loopsCompleted = 0;
+for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++)
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -42,18 +39,23 @@ nameOfFunction(drawCircle);
         and check to see if it has drifted off the screen.         
         */
         function update() {
+            for (var i=0; i < circles.length; i++){
+                physikz.updatePosition(circles[i]);
+                game.checkCirclePosition(circle[i]);
+            }
             // TODO 4 : Update the circle's position //
-physikz.updatePosition()
-physikz.updatePosition()
-physikz.updatePosition()
-physikz.updatePosition()
+physikz.updatePosition(i);
+physikz.updatePosition(i);
+physikz.updatePosition(i);
+physikz.updatePosition(i);
+physikz.updatePosition(i);
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-           game.checkCirclePosition()
-           game.checkCirclePosition()
-           game.checkCirclePosition()
-           game.checkCirclePosition()
-           game.checkCirclePosition()
+           game.checkCirclePosition(i);
+           game.checkCirclePosition(i);
+           game.checkCirclePosition(i);
+           game.checkCirclePosition(i);
+           game.checkCirclePosition(i);
 
 
             
